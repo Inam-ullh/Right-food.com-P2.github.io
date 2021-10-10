@@ -1,0 +1,185 @@
+@media screen and (max-width:950px) {
+    .container {
+        max-width: 1200px;
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    /* ---- Nav bar ---- */
+    .navbar {
+        box-shadow: 0px 5px 10px 0px #aaa;
+        width: 100%;
+        opacity: 0.95;
+    }
+    .navbar input[type="checkbox"], .navbar .hamburger-lines {
+        display: block;
+    }
+    .nav-container {
+        display: block;
+        position: relative;
+        height: 60px;
+    }
+    .navbar input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 40px;
+        top: 18px;
+        left: 18px;
+        z-index: 5;
+        opacity: 0;
+    }
+    .navbar .hamburger-lines {
+        position: absolute;
+        height: 32px;
+        width: 100%;
+        top: 15px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .navbar .hamburger-lines .line {
+        display: block;
+        height: 5px;
+        width: 45px;
+        border-radius: 12px;
+        background: #333333;
+    }
+    .navbar .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .hamburger-lines .line2 {
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .menu-items {
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 250px;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.4s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa
+    }
+    .navbar .menu-items li {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .logo {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 3rem;
+    }
+    .nav-container input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(0);
+    }
+    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+        transform: rotate(40deg);
+    }
+    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+        transform: rotate(-40deg);
+    }
+    /* ---- Section --- About ----  */
+    #about {
+        padding: 15px 0px 10px 0px;
+        background: #f5f5f7;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-con {
+        display: flex;
+        flex-direction: column;
+    }
+    #about h2 {
+        font-size: 2.5rem;
+    }
+    #about p {
+        font-size: 1.3rem;
+    }
+    .about-text {
+        margin: auto;
+        height: 250px;
+        width: 80%;
+    }
+    .about-img {
+        margin: 10px auto;
+        height: 300px;
+        width: 80%;
+    }
+    .about-img img {
+        height: 300px;
+        width: 100%;
+    }
+    /* ---- Section --- Food ---- */
+    #food {
+        padding: 2rem 0px 2rem 0px;
+    }
+    /* ---- Section --- Food-menu ---- */
+    .food-menu-heading {
+        margin-bottom: 20px;
+    }
+    .food-menu-con {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0 20px 0;
+    }
+    .food-menu-item {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        margin-left: 0;
+        width: 100%;
+    }
+    /* ---- Section --- Testimonial ---- */
+    .testimonial-con {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        padding: 1rem;
+        width: 80%;
+    }
+    /* ---- Section --- Contact ---- */
+    .contact-con {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+    }
+    .contact-img {
+        margin: auto;
+        width: 100%;
+    }
+    .form-con {
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .container {
+        max-width: 1200px;
+        width: 98%;
+        margin: auto;
+    }
+    #contact {
+        padding: 2rem 5px;
+    }
+}
